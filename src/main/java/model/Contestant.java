@@ -5,6 +5,10 @@ public class Contestant {
 	private int contestant_number;
 	private String contestant_name;
 	
+	public Contestant() {
+		
+	}
+
 	public Contestant(int contestant_number, String contestant_name) {
 		this.contestant_number = contestant_number;
 		this.contestant_name = contestant_name;
@@ -23,5 +27,8 @@ public class Contestant {
 		this.contestant_name = contestant_name;
 	}
 	
+	public String toString() {
+		return (contestant_name + " is #" + contestant_number);
+	}
 	
 }
